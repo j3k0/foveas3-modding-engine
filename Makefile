@@ -9,5 +9,8 @@ external:
 bin/test.swf:
 	amxmlc -output bin/Main.swf -compiler.debug -compiler.source-path=src -compiler.source-path=test test/Main.as
 
+asdoc:
+	asdoc -doc-sources src/
+
 clean:
 	rm -fr bin external
