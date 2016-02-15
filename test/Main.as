@@ -12,8 +12,7 @@ package
                 TestMod.run();
                 TestModdableParameter.run();
                 TestModdableValue.run();
-                TestModder.run();
-                TestParameterModder.run();
+                TestBaseModder.run();
                 assert.finish();
                 NativeApplication.nativeApplication.exit(0);
             }

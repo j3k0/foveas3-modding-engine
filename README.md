@@ -43,13 +43,13 @@ Can be easily converted from/to JSON, for inclusion in game parameters:
 
 ### Actors
 
-#### ParameterModder
+#### IModder
 
-Will apply a moddable parameter to a game.
+Will apply customization to a game.
 
- * `.apply(value, game...)`
+ * `.apply(mod, game...)`
 
-#### Modder
+#### BaseModder
 
  * Save and load mod parameters to/from game's data.
  * Apply a Mod to the game's display elements and rules.

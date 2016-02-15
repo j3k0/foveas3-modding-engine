@@ -1,10 +1,10 @@
 package fovea.modding {
     public class ModdableParameter {
-        private var _id:String;
+        private var _id:ModdableParameterId;
         private var _localizableTitle:String;
         private var _localizableDescription:String;
 
-        public function get id():String {
+        public function get id():ModdableParameterId {
             return _id;
         }
         public function get localizableTitle():String {
@@ -14,7 +14,7 @@ package fovea.modding {
             return _localizableDescription;
         }
 
-        public function ModdableParameter(id:String, localizableTitle:String, localizableDescription:String) {
+        public function ModdableParameter(id:ModdableParameterId, localizableTitle:String, localizableDescription:String) {
             _id = id;
             _localizableTitle = localizableTitle;
             _localizableDescription = localizableDescription;
