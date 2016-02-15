@@ -1,4 +1,14 @@
 package fovea.modding {
+
+    /** Value that can be associated to a ModdableParameter.
+
+     <p>Example of moddable values:</p>
+     <ul>
+     <li>Wooden background</li>
+     <li>Red tile font</li>
+     <li>Sandy backgroun</li>
+     </ul>
+     */
     public class ModdableValue {
         private var _id:ModdableValueId;
         private var _localizableTitle:String;

@@ -1,4 +1,15 @@
 package fovea.modding {
+
+    /**
+      Customizable game parameter (appearance of rule).
+
+     <p>Example of moddable parameters:</p>
+     <ul>
+     <li>Image for the tile background</li>
+     <li>Color of text on tiles</li>
+     <li>Image for the game background</li>
+     </ul>
+     */
     public class ModdableParameter {
         private var _id:ModdableParameterId;
         private var _localizableTitle:String;
