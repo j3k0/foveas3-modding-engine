@@ -1,0 +1,3 @@
+Text for description in fovea.modding:BaseModder is not valid.
+org.xml.sax.SAXParseException: Attribute name "and" associated with an element type "liSave" must be followed by the ' = ' character.
+
