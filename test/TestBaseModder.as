@@ -23,9 +23,9 @@ package {
             assert.equals("Restores the same mod",
                 "value1", mod1.getValue(new ModdableParameterId("param1")).value);
 
-            assert.test("BaseModder.registerModder()");
+            assert.test("BaseModder.addChild()");
             var spy:SpyModder = new SpyModder();
-            modder0.registerModder(spy);
+            modder0.addChild(spy);
             assert.equals("Adds the modder as a child",
                 spy, modder0.children[0]);
             assert.equals("Doesn't call apply yet",

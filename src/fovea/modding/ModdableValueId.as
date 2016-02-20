@@ -9,6 +9,10 @@ package fovea.modding {
         public function toString():String {
             return "[ModdableValueId '" + value + "']";
         }
+
+        public function equals(x:ModdableValueId):Boolean {
+            return x.value === value;
+        }
     }
 }
 // vim: ts=4:sw=4:et:
