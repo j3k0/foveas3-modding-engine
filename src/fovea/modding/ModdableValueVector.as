@@ -7,6 +7,10 @@ package fovea.modding {
             super();
         }
 
+        public function get length():int {
+            return v.length;
+        }
+
         public function get(i:int):ModdableValue {
             return v[i];
         }
