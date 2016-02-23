@@ -18,10 +18,10 @@ package fovea.modding {
          *
          * @param json JSON data used to initialize the Mod, in format parameterId ⇒ valueId.
          */
-        public function Mod(json:Object) {
-            _json = json;
-            for (var key:String in json) {
-                var value:ModdableValueId = new ModdableValueId(json[key]);
+        public function Mod(json:Object = null) {
+            _json = json || {};
+            for (var key:String in _json) {
+                var value:ModdableValueId = new ModdableValueId(_json[key]);
                 _valuesForParams[key] = value;
                 _parameters.push(new ModdableParameterId(key));
             }
@@ -45,6 +45,12 @@ package fovea.modding {
         /** Returns the list of Parameters defined in this Mod. */
         public function get parameters():Vector.<ModdableParameterId> {
             return _parameters;
+        }
+
+        public function add(pid:ModdableParameterId, vid:ModdableValueId):Mod {
+            var json:Object = toJSON();
+            json[pid.value] = vid.value;
+            return new Mod(json);
         }
     }
 }
