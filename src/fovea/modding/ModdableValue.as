@@ -27,6 +27,9 @@ package fovea.modding {
         public function get value():Object {
             return _value;
         }
+        public function get data():Object {
+            return _value;
+        }
 
         public function ModdableValue(id:ModdableValueId, localizableTitle:String, localizableDescription:String, value:Object) {
             _id = id;
