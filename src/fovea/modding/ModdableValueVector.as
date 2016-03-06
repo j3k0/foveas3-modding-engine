@@ -30,5 +30,12 @@ package fovea.modding {
             return null;
         }
 
+        public function map(fn:Function):Array {
+            var ret:Array = [];
+            for (var i:int = 0; i < v.length; ++i) {
+                ret.push(fn(v[i]));
+            }
+            return ret;
+        }
     }
 }
