@@ -37,5 +37,13 @@ package fovea.modding {
             _localizableDescription = localizableDescription;
             _value = value;
         }
+
+        public function equals(other:ModdableValue):Boolean {
+            return id.equals(other.id) &&
+                localizableTitle == other.localizableTitle &&
+                localizableDescription == other.localizableDescription &&
+                JSON.stringify(value) == JSON.stringify(other.value) &&
+                JSON.stringify(data) == JSON.stringify(other.data);
+        }
     }
 }
